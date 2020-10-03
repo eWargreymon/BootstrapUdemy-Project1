@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Employees list</title>
+    <title>Jobs list</title>
   </head>
   <body>
 
@@ -46,51 +46,46 @@
         <div class="row mt-3">
             <div class="col-lg-3 col-md-3">
                 <div class="list-group">
-                    <div class="list-group-item active">Employee Data</div>
-                    <a href="#" class="list-group-item" data-toggle="modal" data-target="#addEmployee">Add Employee</a>
-                    <a href="employees-list.html" class="list-group-item">View all Employees</a>
+                    <div class="list-group-item active">Jobs Data</div>
+                    <a href="#" class="list-group-item" data-toggle="modal" data-target="#addJob">Add job</a>
+                    <a href="jobs-list.html" class="list-group-item">View all jobs</a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9">
                 <table class="table table-striped table-hover bg-light">
                     <tr class="table-dark">
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
+                        <th>Job Name</th>
                         <th>Details</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>John Me</td>
-                        <td>jon@gogog.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetails1" class="btn btn-info btn-block btn-sm">Details</a></td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetailsEdit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
+                        <td>Graphic Designer</td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetails1" class="btn btn-info btn-block btn-sm">Details</a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetailsedit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
                         <td><a href="#" class="btn btn-danger btn-block btn-sm" onclick="confirm('Sure you want to delete?')" >Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>John Me</td>
-                        <td>jon@gogog.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetails" class="btn btn-info btn-block btn-sm">Details</a></td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetailsEdit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
+                        <td>2</td>
+                        <td>Web Designer</td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetails1" class="btn btn-info btn-block btn-sm">Details</a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetailsedit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
                         <td><a href="#" class="btn btn-danger btn-block btn-sm" onclick="confirm('Sure you want to delete?')">Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>John Me</td>
-                        <td>jon@gogog.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetails" class="btn btn-info btn-block btn-sm">Details</a></td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetailsEdit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
+                        <td>3</td>
+                        <td>web developer</td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetails1" class="btn btn-info btn-block btn-sm">Details</a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetailsedit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
                         <td><a href="#" class="btn btn-danger btn-block btn-sm" onclick="confirm('Sure you want to delete?')">Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>John Me</td>
-                        <td>jon@gogog.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetails" class="btn btn-info btn-block btn-sm">Details</a></td>
-                        <td><a href="#" data-toggle="modal" data-target="#employeeDetailsEdit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
+                        <td>4</td>
+                        <td>CEO</td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetails1" class="btn btn-info btn-block btn-sm">Details</a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#jobdetailsedit1" class="btn btn-warning btn-block btn-sm">Edit</a></td>
                         <td><a href="#" class="btn btn-danger btn-block btn-sm" onclick="confirm('Sure you want to delete?')">Delete</a></td>
                     </tr>
                 </table>
@@ -100,11 +95,11 @@
 
   
   <!-- Modal -->
-  <div class="modal fade" id="addEmployee" tabindex="-1" aria-labelledby="addEmployee" aria-hidden="true">
+  <div class="modal fade" id="addJob" tabindex="-1" aria-labelledby="addJob" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add employee details</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add job details</h5>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -113,23 +108,10 @@
                   <input type="date" required class="form-control form-control-sm">
               </div>
               <div class="mb-3">
-                  <input type="text" placeholder="Name" required class="form-control form-control-sm">
+                  <input type="text" placeholder="Job Name" required class="form-control form-control-sm">
               </div>
               <div class="mb-3">
-                  <input type="email" placeholder="Email" required class="form-control form-control-sm">
-              </div>
-              <div class="mb-3">
-                  <input type="tel" placeholder="Phone number" required class="form-control form-control-sm">
-              </div>
-              <div class="mb-3">
-                <select class="form-control form-control-sm">
-                    <option value="Graphic designer">Graphic designer</option>
-                    <option value="Web designer">Wev designer</option>
-                    <option value="Web developer">Web developer</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                  <button type="submit" class="btn btn-sm btn-block btn-success">Add new employee</button>
+                  <button type="submit" class="btn btn-sm btn-block btn-success">Add new job</button>
               </div>
           </form>
         </div>
@@ -138,7 +120,7 @@
   </div>
 
 
-  <div class="modal fade" id="employeeDetails1" tabindex="-1" aria-labelledby="employeeDetails1" aria-hidden="true">
+  <div class="modal fade" id="jobdetails1" tabindex="-1" aria-labelledby="jobdetails1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -156,26 +138,14 @@
             </tr>
             <tr>
                 <th>Name</th>
-                <td>John</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>hj@ho.com</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>6+5665659</td>
-            </tr>
-            <tr>
-                <th>Job</th>
-                <td>sfwfwfe</td>
+                <td>Whatever job</td>
             </tr>
         </table>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="employeeDetailsEdit1" tabindex="-1" aria-labelledby="employeeDetailsEdit1" aria-hidden="true">
+  <div class="modal fade" id="jobdetailsedit1" tabindex="-1" aria-labelledby="jobdetailsedit1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -188,23 +158,10 @@
                   <input type="date" required class="form-control form-control-sm">
               </div>
               <div class="mb-3">
-                  <input type="text" value="John" required class="form-control form-control-sm">
+                  <input type="text" value="Whatever job" required class="form-control form-control-sm">
               </div>
               <div class="mb-3">
-                  <input type="email" value="e@em.com" required class="form-control form-control-sm">
-              </div>
-              <div class="mb-3">
-                  <input type="tel" value="45585" required class="form-control form-control-sm">
-              </div>
-              <div class="mb-3">
-                <select class="form-control form-control-sm">
-                    <option value="Graphic designer">Graphic designer</option>
-                    <option value="Web designer">Wev designer</option>
-                    <option value="Web developer">Web developer</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                  <button type="submit" class="btn btn-sm btn-block btn-success">Save employee info</button>
+                  <button type="submit" class="btn btn-sm btn-block btn-success">Save job info</button>
               </div>
           </form>
         </div>
